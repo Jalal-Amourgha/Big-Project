@@ -1,0 +1,881 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Start Header */
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    z-index: 3;
+    margin-top: 30px;
+    width: 111px;
+}
+
+header .container::after {
+    content: "";
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    width: calc(100% - 30px);
+    bottom: 0;
+    left: 15px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 40px 10px ;
+    position: relative;
+    z-index: 2;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: purple;
+    border-bottom: 1px solid purple;
+}
+
+header nav .form {
+    height: 40px;
+    width: 50px;
+    border-left: 1px solid white;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+header nav .form i {
+    margin-top: 15px;
+}
+
+.menu {
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.landing {
+    min-height: 100vh;
+    background-image: url(../images/main.png);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .text {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 39%;
+    left: 0;
+    background-color: rgb(11 4 14/60%);
+    width: 50%;
+    color: white;
+}
+
+.landing .text .content {
+    max-width: 550px;
+}
+
+.landing .text .content h2 {
+    font-size: 32;
+    line-height: 1.8;
+}
+
+
+.landing .ko {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/ 60%);
+
+}
+
+
+.landing .content p {
+    padding-top: 20px ;
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.change-background {
+    color: white;
+    top: 50%;
+    position: absolute;
+}
+
+.fa-arrow-left {
+   left: 30px;
+}
+
+
+.fa-arrow-right {
+    right: 30px;
+}
+
+
+.bullets {
+    position: absolute;
+    top: 95%;
+    left: 46%;
+    display: flex;
+    padding-right: 30px
+}
+
+.landing ul li {
+    height: 18px;
+    width: 18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+.landing .active {
+    background-color: purple;
+}
+
+
+.landing i:hover {
+    color: purple;
+}
+
+
+/* End Header */
+
+
+/* S E R V I C E S*/
+
+
+.services .services-heading, .portfolio, .about-us, .pricing-title, .contact {
+    padding: 100px;
+    text-align: center;
+}
+
+.services .container .services-heading h2, .portfolio-title, .about-us h2, .pricing-title h2, .contact h2 {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 100px;
+}
+
+.services .services-heading h2:before, .portfolio h2:before, .about-us h2:before, .pricing-title h2:before, .contact h2:before{
+    content: "";
+    height: 1px;
+    width: 130px;
+    bottom: 51%;
+    left: 50%;
+    background-color: purple;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.services .services-heading h2:after , .portfolio h2:after , .about-us h2:after, .pricing-title h2:after, .contact h2:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border: 1px solid purple;
+    border-radius: 50%;
+    top: 45%;
+    left: 49%;
+    background-color: white;
+}
+
+.services {
+    padding-bottom: 60px;
+}
+.services p , .portfolio p , .about-us p , .pricing-title p{
+    color: #777;
+    line-height: 1.8;
+    width: 403px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+}
+
+
+.serv-icon {
+    color: black;
+    font-size: 2rem;
+}
+
+.services .services-container h2 {
+    color: rgb(75, 5, 75);
+    margin-top: -36px;
+    position: absolute;
+    margin-left: 96px;
+    margin-bottom: 42px;
+}
+
+.services .services-container {
+    display: grid;
+}
+
+.services .srv-box i {
+    padding-right: 30px;
+}
+
+.services .srv-box  h2 {
+    padding-bottom: 20px;
+    color: rgb(75, 5, 75);
+}
+
+.services .srv-box  p {
+    padding-bottom: 30px;
+}
+
+/* S E R V I C E S*/
+
+.design {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.design .design-cover {
+    background-image: url(../images/yessssssssssss.png);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+   
+
+.mobile {
+    position: absolute;
+    z-index: 5;
+    margin-top: -301px;
+    margin-left: 100px;
+    height: 300px;
+}
+
+.our-srvs {
+    height: 300px;
+    width: 500px;
+    background-color: rgba(70, 9, 70, 50%);
+    z-index: 5;
+    position: absolute;
+    margin-top: -30%;
+    left: 62.5%;
+}
+
+.design h2 {
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.design ul {
+    list-style: none;
+    padding-top: 50px;
+    padding-left: 40px;
+    line-height: 2;
+    
+}
+
+.design ul li {
+    color: white;
+}
+
+/* P O R T F O L I O */
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portfolio ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+
+.portfolio ul li {
+    padding: 4px 10px;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.portfolio ul li:hover, .portfolio .active {
+    background-color: purple;
+}
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 285px);
+    grid-row-gap: 5px;
+}
+
+.port-pic {
+    height: 230px;
+    width: 280px;
+    transition: 0.3s;
+   
+}
+
+.port-pic:hover {
+    transform:
+        rotateZ(5deg)
+        scale(1.2);
+}
+
+
+/* P O R T F P L I O */
+
+
+/* V I D E O */
+
+
+
+/* V I D E O*/
+
+
+/* A B O U T US */
+
+.about-mobile {
+    display: flex;
+    justify-content: center;
+}
+/* A B O U T US*/
+/*  S T A T S */
+.stats {
+    background-image:url(../images/oh\ no.jpg);
+    height: 550px;
+    width: 100%;
+    background-size: cover;
+}
+
+.stats i {
+    color: white;
+    border: 12px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.stats .stats-box {
+    display:  flex;
+    justify-content: space-between;
+    text-align: center;
+    align-self: center;
+    width: 1000px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.stats .stats-boxs {
+    margin-top: 130px;
+    left: 10%;
+    position: absolute;
+    background-color: rgba(160, 45, 145, 80%);
+    width: 1100px;
+    height: 300px;
+}
+
+.stats .achievements i , .stats .achievements h2 {
+    margin-bottom: 30px;
+}
+
+.stats .achievements h2 , .stats h4 {
+    color: white;
+}
+
+.stats .achievements h2 {
+    font-size: 40px;
+}
+
+
+/* S T A T S */
+
+/* C O L L E G E */
+
+.college {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.college img {
+    height: 150px;
+    width: 150px;
+    ;
+}
+
+.college .colleges {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+}
+
+/* G O L L E G E*/
+
+/* A B O N N E M E N T */
+
+.pricing .abonnement {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-column-gap: 20px;
+}
+
+.pricing .offer {
+    background-color: #eee;
+    padding-bottom: 30px;
+}
+
+.pricing .abonnement h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    margin-top: 20px;
+}
+
+.pricing .abonnement h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.pricing .abonnement h3::before {
+    content: "";
+    height: 1px;
+    width: 270px;
+    bottom: 178%;
+    left: 50%;
+    background-color: purple;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.pricing .abonnement h3::after {
+    content: "";
+    height: 1px;
+    width: 270px;
+    bottom: -360%;
+    left: 50%;
+    background-color: purple;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.pricing ul {
+    text-align: center;
+    position: relative;
+}
+.pricing li {
+    color: black;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+
+.pricing ul::before {
+    content: "";
+    height: 1px;
+    width: 270px;
+    bottom: 0%;
+    left: 50%;
+    background-color: purple;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+.pricing .abonnement button {
+    background-color: #eee;
+    border: 1px purple solid;;
+    padding: 10px;
+    position: relative;
+    margin-left: 88px;
+    margin-top: 20px;
+}
+
+.pricing .abonnement a {
+    text-decoration: none;
+    color: black;
+}
+
+.pricing .abonnement button:hover, .pricing .abonnement a:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+.pricing button {
+    background-color: purple;
+    padding: 20px;
+    border: none;
+    margin-left: 500px;
+    position: relaative;
+}
+
+.pricing a {
+    color: white;
+    text-decoration: none;
+}
+
+.pricing h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+/* A B O N N E M E N T */
+
+.contact .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+}
+
+.contact p{
+    padding-bottom: 50px;
+}
+
+.contact .contact-input input {
+    width: 723px;
+    border: 2px solid purple;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.contact .contact-input .big {
+    height: 200px;
+}
+
+.contact .contact-infos h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.contact .contact-infos p {
+    color: #777;
+}
+
+.contact .local {
+    padding-top: 60px;
+}
+
+.contact .contact-input button {
+    border: none;
+}
+
+.contact .contact-input a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    border: none;
+    position: absolute;
+}
+
+.contact .contact-input input{
+    padding-left: 20px;
+}
+
+.end {
+    background-image: url(../images/w.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-color: rgb(0 0 0/ 60%);
+    position: absolute;
+}
+
+.end .socials {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 60%);
+}
+
+.end .socials img {
+    width: 110px;
+    margin-left: 45.5%;
+    padding: 30px 0px 50px 0px;
+}
+
+.end .socials h2 {
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.end .socials h2::after {
+    content: "";
+    position: absolute;
+    background-color: purple;
+    height: 2px;
+    width: 200px;
+    left: 43%;
+    top: 42%;
+}
+
+.end .socials ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.end .socials ul li {
+    padding-right: 25px;
+}
+
+.end .socials a {
+    color: rgb(63, 3, 63);
+}
+
+.end .socials h3 {
+    color: white;
+    text-align: center;
+}
+
+.end .socials span {
+    color: purple;
+}
+
+
+
+
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    header nav .menu {
+        display: none;
+    }
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 600px);
+    }
+    .services .services-container .text p {
+        width: 400px;
+    }
+
+}
+@media (max-width: 767px) { 
+    header nav ul {
+        display: none;
+    }
+    header nav .menu:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background-color: rgb(0, 0, 0 / 50%);
+    }
+    header nav ul li a {
+        padding: 15px ;
+    }
+
+    .landing i {
+        display: none;
+    }
+    
+    .landing .text {
+        max-width: 100%;
+    }
+
+    .landing .text .content  {
+        width: 100%;
+    }
+
+    .services .srv-box i {
+        left: 45%;
+        position: absolute;
+    }
+    .services .srv-box h2 { 
+    padding-top: 85px;
+    text-align: center;
+    margin-left: -5px;
+    position: relative;
+
+    }
+
+    .services .srv-box p {
+        width: 250px;
+        text-align: center;
+       
+    }
+
+    .design .mobile {
+        display: none;
+    }
+    .design .our-srvs {
+        width: 100%;
+        left: -10%;
+        margin-top: -402px;
+    }
+    .portfolio h2 {
+        margin-left: -18px;
+    }
+    .portfolio .images {
+        display: grid;
+        grid-template-columns: 200px;
+        margin-left: -70px;
+    }
+
+    .about-us .about-mobile img {
+        height: 110px;
+        width: 175px;
+    }
+
+    .stats .stats-box {
+        display:  grid;
+        grid-template-columns: repeat(1, 200px);
+        width: 191px;
+    }
+    .stats .stats-boxs {
+        height: 840px;
+        width: 300px;
+        margin-top: 50px;
+        max-width: 100%;
+    }
+    .stats {
+        width: 100%;
+        height: 940px;
+    }
+    .stats .achievements {
+        padding-bottom: 20px;
+    }
+    .pricing .abonnement {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing .abonnement button {
+        margin-left: 130px;
+    }
+    .pricing ul::before {
+        content: "";
+        height: 1px;
+        width: 270px;
+        bottom: 0%;
+        left: 50%;
+        background-color: purple;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .pricing .abonnement h3::before {
+        content: "";
+        height: 1px;
+        width: 360px;
+        bottom: 178%;
+        left: 50%;
+        background-color: purple;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .pricing .abonnement h3::after {
+        content: "";
+        height: 1px;
+        width: 360px;
+        bottom: -360%;
+        left: 50%;
+        background-color: purple;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .pricing button {
+        margin-left: 100px;
+    }
+
+    .contact .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    .contact-input {
+        margin-left: -50px;
+    }
+
+    .contact .contact-input input {
+        width: 150px;
+    }
+
+    .contact .contact-input button {
+        display: none;
+    }
+
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+
+/* Large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
